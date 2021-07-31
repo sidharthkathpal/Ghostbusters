@@ -8,15 +8,23 @@
 
 ![](/Images/pullfig.png)
 
-## Team
-- Sidharth Kathpal
-- Siddha Ganju
-- Anirudh Koul
+## Setup python libraries
+
+- TensorFlow
+- Keras
+- sklearn
+- openCV
+- Random
+- NumPy
 
 ## Dataset Images
-
+- MNIST-MCML Dataset
 ![](/Images/0_2_4_4.jpg) ![](/Images/0_2_6_5.jpg)
 ![](/Images/1_3_5_4.jpg) ![](/Images/1_3_7_5.jpg)
+
+- Alphabets-MCML Dataset
+![](/Images/A_C_E_0_1.jpg) ![](/Images/D_B_F_0_1.jpg)
+![](/Images/H_D_B_0_1.jpg) ![](/Images/G_A_C_0_1.jpg)
 
 ## Connectivity Calculation
 
@@ -25,9 +33,9 @@ def connectednessMeasure(trainLabels, testLabelsVal):
     arrayVal = correlationmt(trainLabels)
     connectedness = []
     y_test_num = convertToNum(testLabelsVal)
-    for w in range(120):
+    for w in range(len(testLabelsVal)):
         count = 0
-        for m in range(10):
+        for m in range(len(testLabelsVal[w])):
             counter = 0
             for i in range(len(y_test_num[w])):
                 if arrayVal[y_test_num[w][i]][m] == 1:
@@ -36,3 +44,8 @@ def connectednessMeasure(trainLabels, testLabelsVal):
         connectedness.append([y_test_num[w],round(count/10, 2)])
     return connectedness
 ```
+
+## Team
+- Sidharth Kathpal
+- Siddha Ganju
+- Anirudh Koul
