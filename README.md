@@ -19,10 +19,12 @@
 
 ## Dataset Images
 - MNIST-MCML Dataset
+
 ![](/Images/0_2_4_4.jpg) ![](/Images/0_2_6_5.jpg)
 ![](/Images/1_3_5_4.jpg) ![](/Images/1_3_7_5.jpg)
 
 - Alphabets-MCML Dataset
+
 ![](/Images/A_C_E_0_1.jpg) ![](/Images/D_B_F_0_1.jpg)
 ![](/Images/H_D_B_0_1.jpg) ![](/Images/G_A_C_0_1.jpg)
 
