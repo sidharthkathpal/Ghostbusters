@@ -4,7 +4,11 @@
 
 > Compositional  bias  is  common  in  Multi-Class  Multi-Label datasets where certain classes frequently co-occur to-gether.  Classification performance due to non-iid behaviorof Multi-Class Multi-Label datasets is largely unexplored.We evaluate the potential impact of this compositional biason Multi-Class Multi-Label classifiers, and, demonstrate aremedy - with novel framework of representing bias through“connectedness”.   Our  work  effectively  strives  to  answerquestions along the lines of “Is the classification accuracyof cat impacted by the presence of the person in the image?”and  more  importantly,“Is  the  classification  accuracy  ofcat impacted by the absence of the person in the test im-age?”.  Interestingly our experiments show that class pairsthat are present in a test image, but do not appear togetherelsewhere in the training dataset do impact the recognitionaccuracy  and  thus  we  refer  to  them  as  ghost  class  pairs.We make a surprising discovery: higher the connectednessof classes (based on class pairs appearing within the sameimages), higher the classification accuracy.  Based on thisobservation, we develop a greedy data augmentation strat-egy that recommends which missing pairs need to be addedto the training dataset in order to improve F1 score withminimal data addition.  This ultimately is able to improveclassification accuracy by 25-30% in several scenarios.
 
+## Hypothesis depiction
+
 ![](/Images/cat-person.png) 
+
+## Uniqueness of MSCOCO dataset
 
 ![](/Images/pullfig.png)
 
