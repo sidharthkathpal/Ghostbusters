@@ -34,6 +34,8 @@
 
 ## Connectivity Calculation
 
+The following function calculates the connectedness values for each of the possible combinations.
+
 ```
 def connectednessMeasure(trainLabels, testLabelsVal):
     arrayVal = correlationmt(trainLabels)
