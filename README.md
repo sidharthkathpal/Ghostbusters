@@ -15,17 +15,12 @@
 
 ## Dataset Images
 
-![](/Images/0_2_4_4.jpg) 
-
-![](/Images/0_2_6_5.jpg)
-
-![](/Images/1_3_5_4.jpg) 
-
-![](/Images/1_3_7_5.jpg)
+![](/Images/0_2_4_4.jpg) ![](/Images/0_2_6_5.jpg)
+![](/Images/1_3_5_4.jpg) ![](/Images/1_3_7_5.jpg)
 
 ## Connectivity Calculation
 
-''' 
+```
 def connectednessMeasure(trainLabels, testLabelsVal):
     arrayVal = correlationmt(trainLabels)
     connectedness = []
@@ -40,4 +35,4 @@ def connectednessMeasure(trainLabels, testLabelsVal):
             count = count + counter/len(y_test_num[w])
         connectedness.append([y_test_num[w],round(count/10, 2)])
     return connectedness
-'''
+```
